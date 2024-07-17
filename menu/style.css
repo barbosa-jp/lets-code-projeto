@@ -1,0 +1,56 @@
+:root {
+  --azul: #0077aa;
+  --azul-claro: #00aaff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.menu {
+  position: fixed;
+  left: 0;
+  background-color: white;
+  height: 100%;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 10px var(--cinza) ;
+}
+
+.lista-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+}
+
+.lista-menu li {
+  padding: 10px;
+}
+
+.lista-menu li a {
+  text-decoration: none;
+}
+
+.lista-menu li:not(.selecionado) a {
+  color: black;
+}
+
+.lista-menu li a:hover {
+  color: var(--azul);
+}
+
+.selecionado {
+  background-color: var(--azul-claro);
+  color: white;
+}
+
+.selecionado a {
+  font-weight: bolder;
+  color: white;
+}

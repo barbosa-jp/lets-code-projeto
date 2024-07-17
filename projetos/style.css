@@ -1,0 +1,77 @@
+:root {
+  --azul: #0077aa;
+  --azul-claro: #00aaff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%; 
+}
+
+body {
+  background: var(--azul);
+}
+
+.bolder {
+  font-size: bolder;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px 0 20px 240px;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 40px 20px;
+  width: 400px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+img {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.link {
+  text-align: center;
+}
+
+a {
+  color: var(--azul-claro);
+}
